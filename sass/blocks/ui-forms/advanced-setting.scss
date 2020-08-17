@@ -1,0 +1,13 @@
+@import "../../variables";
+
+.advanced-setting {
+    background-color: $gray;
+    padding: 15px 12px;
+    border-radius: 4px;
+    &__elem {
+        margin-bottom: 15px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}

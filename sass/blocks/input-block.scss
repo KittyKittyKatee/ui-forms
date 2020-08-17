@@ -1,0 +1,39 @@
+@import "../variables";
+
+.input-block {
+    &__title {
+        margin-bottom: 12px;
+        font-size: 15px;
+        font-family: SF-Pro-Display-Semibold;
+        line-height: 21px;
+        color: $black;
+    }
+    &__input {
+        input {
+            height: 40px;
+            width: 100%;
+            background-color: $input-color;
+            border: none;
+            border-radius: 4px;
+            padding: 0 12px;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-family: SF-Pro-Display-Regular;
+            margin: 0;
+            color: $black;
+            outline: none;
+            &::placeholder {
+                font-size: 15px;
+                font-family: SF-Pro-Display-Regular;
+                margin: 0;
+                color: $black;
+                opacity: 0.5;
+            }
+        }
+        &--white {
+            input {
+                background-color: $white;
+            }
+        }
+    }
+}

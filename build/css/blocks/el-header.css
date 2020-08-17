@@ -1,0 +1,46 @@
+.el-header {
+  width: 100%;
+  position: relative;
+  padding: 20px 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .el-header__tip-title {
+    color: #006ae4;
+    text-decoration: none;
+    cursor: pointer; }
+  .el-header__title {
+    font-family: SF-Pro-Display-Bold;
+    font-size: 24px;
+    line-height: normal;
+    color: #26282d;
+    margin: 0; }
+
+.close-btn {
+  cursor: pointer;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #727887;
+  position: absolute;
+  top: 25px;
+  right: 12px;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  outline: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border: none;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  .close-btn:hover {
+    background-color: #666c79; }

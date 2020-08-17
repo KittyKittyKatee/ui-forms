@@ -1,0 +1,69 @@
+@import "../variables";
+
+.radio {
+    width: 46px;
+    height: 24px;
+    input {
+        display: none;
+    }
+    &__label {
+        height: 100%;
+        width: 100%;
+        background-color: $cold-gray;
+        display: flex;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        border-radius: 24px;
+        padding: 3px;
+        box-sizing: border-box;
+    }
+    &__active {
+        width: 18px;
+        height: 18px;
+        border-radius: 18px;
+        background-color: $white;
+        position: absolute;
+        box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.25);
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+    }
+    &__right {
+        border-radius: 24px;
+        cursor: pointer;
+        width: 40px;
+        height: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        z-index: 10;
+        transition: all 0.3s;
+    }
+    &__left {
+        border-radius: 24px;
+        cursor: pointer;
+        width: 40px;
+        height: 18px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        transition: all 0.3s;
+        z-index: 10;
+    }
+}
+
+.active-radio {
+    color: $white;
+}
+
+input:checked + .radio__label .radio__active {
+    transform: translateX(120%);
+}
+input:checked + .radio__label {
+    background-color: $blue;
+}

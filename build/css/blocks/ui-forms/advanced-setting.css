@@ -1,0 +1,8 @@
+.advanced-setting {
+  background-color: #eeeff2;
+  padding: 15px 12px;
+  border-radius: 4px; }
+  .advanced-setting__elem {
+    margin-bottom: 15px; }
+    .advanced-setting__elem:last-child {
+      margin-bottom: 0; }

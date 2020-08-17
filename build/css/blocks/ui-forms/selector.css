@@ -1,0 +1,36 @@
+.selector {
+  background-color: #eeeff2;
+  border-radius: 4px;
+  height: 40px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+  -webkit-transition: all 0.2s;
+  transition: all 0.2s; }
+  .selector__active {
+    background-color: #006ae4;
+    border-radius: 4px;
+    width: 33.3%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+  .selector__elem {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    font-size: 15px;
+    font-family: SF-Pro-Display-Regular;
+    color: black;
+    position: relative;
+    z-index: 5; }
+    .selector__elem--active {
+      color: #fff; }

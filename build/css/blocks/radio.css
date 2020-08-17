@@ -1,0 +1,87 @@
+.radio {
+  width: 46px;
+  height: 24px; }
+  .radio input {
+    display: none; }
+  .radio__label {
+    height: 100%;
+    width: 100%;
+    background-color: #a0a8bb;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 24px;
+    padding: 3px;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box; }
+  .radio__active {
+    width: 18px;
+    height: 18px;
+    border-radius: 18px;
+    background-color: #fff;
+    position: absolute;
+    -webkit-box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.25);
+            box-shadow: -1px 1px 3px 0 rgba(0, 0, 0, 0.25);
+    z-index: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .radio__right {
+    border-radius: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 10;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .radio__left {
+    border-radius: 24px;
+    cursor: pointer;
+    width: 40px;
+    height: 18px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 10; }
+
+.active-radio {
+  color: #fff; }
+
+input:checked + .radio__label .radio__active {
+  -webkit-transform: translateX(120%);
+          transform: translateX(120%); }
+
+input:checked + .radio__label {
+  background-color: #006ae4; }

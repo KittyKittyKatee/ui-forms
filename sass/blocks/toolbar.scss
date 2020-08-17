@@ -1,0 +1,80 @@
+@import "../variables";
+
+.toolbar {
+    width: 61px;
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: $bg;
+    height: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-sizing: border-box;
+    border: 1px solid $gray;
+    &__main {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    &__scale-count {
+        height: 66px;
+        width: 62px;
+        border-bottom: 1px solid $gray;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-family: SF-Pro-Display-Semibold;
+        font-size: 15px;
+        line-height: normal;
+        color: $black;
+        margin: 0;
+    }
+    &__elem {
+        height: 66px;
+        width: 62px;
+        border-bottom: 1px solid $gray;
+        box-sizing: border-box;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        cursor: pointer;
+        transition: all 0.2s;
+        &:hover {
+            img {
+                &:first-child{
+                    display: none;
+                }
+                &:nth-child(2){
+                    display: block;
+                }
+            }
+        }
+        img {
+            transition: all 0.2s;
+            &:nth-child(2){
+                display: none;
+            }
+            &:last-child{
+                display: none;
+            }
+        }
+    }
+}
+
+.active {
+    background-color: $blue;
+}
+
+.active.toolbar__elem img:last-child{
+        display: block !important;
+}
+
+.active.toolbar__elem img:nth-child(2){
+    display: none !important;
+}
+
+.active.toolbar__elem img:first-child{
+    display: none !important;
+}
+

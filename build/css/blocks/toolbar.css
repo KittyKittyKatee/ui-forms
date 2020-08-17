@@ -1,0 +1,83 @@
+.toolbar {
+  width: 61px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  background-color: #f6f8fc;
+  height: 100%;
+  min-height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border: 1px solid #eeeff2; }
+  .toolbar__main {
+    display: grid;
+    grid-template-columns: 1fr; }
+  .toolbar__scale-count {
+    height: 66px;
+    width: 62px;
+    border-bottom: 1px solid #eeeff2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    font-family: SF-Pro-Display-Semibold;
+    font-size: 15px;
+    line-height: normal;
+    color: #26282d;
+    margin: 0; }
+  .toolbar__elem {
+    height: 66px;
+    width: 62px;
+    border-bottom: 1px solid #eeeff2;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    cursor: pointer;
+    -webkit-transition: all 0.2s;
+    transition: all 0.2s; }
+    .toolbar__elem:hover img:first-child {
+      display: none; }
+    .toolbar__elem:hover img:nth-child(2) {
+      display: block; }
+    .toolbar__elem img {
+      -webkit-transition: all 0.2s;
+      transition: all 0.2s; }
+      .toolbar__elem img:nth-child(2) {
+        display: none; }
+      .toolbar__elem img:last-child {
+        display: none; }
+
+.active {
+  background-color: #006ae4; }
+
+.active.toolbar__elem img:last-child {
+  display: block !important; }
+
+.active.toolbar__elem img:nth-child(2) {
+  display: none !important; }
+
+.active.toolbar__elem img:first-child {
+  display: none !important; }

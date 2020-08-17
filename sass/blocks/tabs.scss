@@ -1,0 +1,76 @@
+@import "../variables";
+
+.tabs {
+    width: 100%;
+    height: 40px;
+    input {
+        display: none;
+    }
+    &__label {
+        height: 100%;
+        width: 100%;
+        background-color: $gray;
+        display: flex;
+        transition: all 0.3s;
+        position: relative;
+        overflow: hidden;
+        border-radius: 4px;
+        font-size: 15px;
+        color: $black;
+        font-family: SF-Pro-Display-Regular;
+    }
+    &__active {
+        width: 150px;
+        height: 40px;
+        border-radius: 4px;
+        background-color: $blue;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+        transition: all 0.2s ease-in-out;
+    }
+    &__right {
+        border-radius: 4px;
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        z-index: 10;
+        transition: all 0.3s;
+    }
+    &__left {
+        border-radius: 4px;
+        cursor: pointer;
+        width: 150px;
+        height: 40px;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        box-sizing: border-box;
+        transition: all 0.3s;
+        z-index: 10;
+    }
+}
+
+.active-tab {
+    color: $white;
+}
+
+input:checked + .tabs__label .tabs__active {
+    transform: translateX(100%);
+}
+
+input:checked + .tabs__label .tabs__right {
+    color: $black;
+}
+
+input:checked + .tabs__label .tabs__left {
+    color: $white;
+}

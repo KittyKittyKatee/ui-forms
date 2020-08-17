@@ -1,0 +1,110 @@
+<section class="el-panel el-panel-4">
+  <div class="el-panel__elems scroll">
+    <div class="el-panel__header el-header">
+      <h2 class="el-header__title title-2">Вопрос: да/нет</h2>
+      <a class="el-header__tip-title text-15">Как это использовать?</a>
+      <button class="el-panel__close-btn close-btn">
+        <img src="img/icon-close-btn.svg" alt="" />
+      </button>
+    </div>
+    <div class="el-panel__main">
+      <div class="el-panel__elem message-block">
+        <span class="message-block__title">Сообщение</span>
+        <div class="message-block__body">
+          <textarea
+            class="text-15"
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Введите текст"
+          ></textarea>
+          <div class="message-block__actions">
+            <button class="message-block__btn btn-main btn-main--light-gray">
+              Варианты
+            </button>
+            <div class="message-block__stylize stylize-block">
+              <ul class="stylize-block__elems">
+                <li class="stylize-block__elem"><img src="./img/style-icons/icons-8-bold.svg" alt="" /></li>
+                <li class="stylize-block__elem"><img src="./img/style-icons/icons-8-italic.svg" alt="" /></li>
+                <li class="stylize-block__elem"><img src="./img/style-icons/icons-8-underline.svg" alt="" /></li>
+                <li class="stylize-block__elem"><img src="./img/style-icons/icons-8-source-code.svg" alt="" /></li>
+                <li class="stylize-block__elem"><img src="./img/style-icons/icons-8-h.svg" alt="" /></li>
+                <li class="stylize-block__elem"><img src="./img/style-icons/icons-8-list.svg" alt="" /></li>
+                <li class="stylize-block__elem"><img src="./img/style-icons/icons-8-get-quote.svg" alt="" /></li>
+                <li class="stylize-block__elem"><img src="./img/style-icons/icons-8-link.svg" alt="" /></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="el-panel__elem stylize-btn">
+        <div class="stylize-btn__elem">
+          <button class="stylize-btn__btn stylize-btn__btn--active">Да
+            <div class="stylize-btn__actions">
+              <div class="stylize-btn__action">
+                <img src="./img/btn-edit/settings.svg" alt="">
+              </div>
+              <div class="stylize-btn__action">
+                <img src="./img/btn-edit/bin.svg" alt="">
+              </div>
+            </div>
+          </button>
+          <div class="stylize-btn__settings">
+            <div class="stylize-btn__select selects-blue selects-blue--active">
+              <div class="selects-blue__elem">
+                <span class="selects-blue__title">Формат даты</span>
+                <div class="selects-blue select-blue">
+                  <div class="select-blue__header">
+                    <span class="select-blue__current">value 3</span>
+                    <span class="select-blue__icon">
+                      <img src="img/select-arrow--white.svg" alt="" />
+                    </span>
+                  </div>
+                  <div class="select-blue__body">
+                    <div class="select-blue__item">value 1</div>
+                    <div class="select-blue__item">value 2</div>
+                    <div class="select-blue__item">value 3</div>
+                    <div class="select-blue__item">value 4</div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="stylize-btn__elem">
+          <button class="stylize-btn__btn stylize-btn__btn--active">Нет
+            <div class="stylize-btn__actions">
+              <div class="stylize-btn__action">
+                <img src="./img/btn-edit/settings.svg" alt="">
+              </div>
+              <div class="stylize-btn__action">
+                <img src="./img/btn-edit/bin.svg" alt="">
+              </div>
+            </div>
+          </button>
+        </div>
+      </div>
+      <div class="el-panel__elem input-block">
+        <h3 class="input-block__title title-4">
+          Сохранить ответы в переменной
+        </h3>
+        <div class="input-block__input">
+          <input
+            type="text"
+            name="save-answers"
+            id="save-answers"
+            placeholder="@name"
+            value="@name"
+          />
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="el-panel__btns">
+    <button class="el-panel__btn btn-round">Сохранить</button>
+    <button class="el-panel__btn btn-round btn-round--outline-blue">
+      Отмена
+    </button>
+  </div>
+</section>

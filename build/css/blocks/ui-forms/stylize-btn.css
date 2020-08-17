@@ -1,0 +1,65 @@
+.stylize-btn {
+  width: 100%;
+  background-color: #eeeff2;
+  padding: 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+  .stylize-btn__elem {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    width: 100%;
+    position: relative;
+    margin-bottom: 8px;
+    min-height: 40px; }
+    .stylize-btn__elem:last-child {
+      margin-bottom: 0; }
+  .stylize-btn__settings {
+    background-color: #005cc5;
+    padding: 52px 12px 14px;
+    border-radius: 4px; }
+  .stylize-btn__btn {
+    background-color: #006ae4;
+    width: 100%;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    height: 40px;
+    font-size: 15px;
+    font-family: SF-Pro-Display-Regular;
+    padding: 11px 12px;
+    color: #fff;
+    display: block;
+    cursor: pointer;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    -webkit-appearance: none;
+       -moz-appearance: none;
+            appearance: none;
+    border: none;
+    text-align: left;
+    border-radius: 4px;
+    -webkit-transition-property: background-color;
+    transition-property: background-color;
+    -webkit-transition-duration: 200ms;
+            transition-duration: 200ms;
+    position: absolute;
+    top: 0; }
+    .stylize-btn__btn--active {
+      -webkit-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+              box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12); }
+  .stylize-btn__actions {
+    position: absolute;
+    right: 12px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-left: 12px;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 45px;
+    top: 60%;
+    -webkit-transform: translate(0, -60%);
+            transform: translate(0, -60%); }

@@ -1,0 +1,4 @@
+.input-group__elem {
+  margin-bottom: 15px; }
+  .input-group__elem:last-child {
+    margin-bottom: 0; }

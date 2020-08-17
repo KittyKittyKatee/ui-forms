@@ -1,0 +1,214 @@
+@charset "UTF-8";
+@import "variables";
+
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 18px;
+}
+
+body {
+	font-family: 'SF-Pro-Display-Regular', 'Helvetica', 'Arial', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	background-color: $dark-bg;
+}
+
+.title-1 {
+    font-family: SF-Pro-Display-Semibold;
+    font-size: 32px;
+    color: $black;
+    margin-bottom: 30px;
+}
+
+.title-2 {
+    font-family: SF-Pro-Display-Bold;
+    font-size: 24px;
+    line-height: normal;
+    color: $black;
+    margin: 0;
+}
+
+.title-3 {
+    font-family: SF-Pro-Display-Bold;
+    font-size: 21px;
+    line-height: normal;
+    color: $black;
+    margin: 0;
+    margin-bottom: 10px;
+}
+
+.title-4 {
+    font-family: SF-Pro-Display-Bold;
+    font-size: 15px;
+    line-height: normal;
+    color: $black;
+    margin: 0;
+    margin-bottom: 20px;
+}
+
+.title-6 {
+    font-family: SF-Pro-Display-Bold;
+    font-size: 14px;
+    line-height: 18px;
+    color: $black;
+    margin: 0;
+}
+
+.text-15 {
+    font-family: SF-Pro-Display-Regular;
+    font-size: 15px;
+    color: $black;
+    margin: 0;
+}
+
+.container {
+    display: flex;
+    max-width: 1784px;
+    margin: 0 auto 0 76px;
+    overflow: hidden;
+}
+
+body {
+    height: 100vh;
+}
+
+.small-text {
+    p {
+        font-family: SF-Pro-Display-Regular;
+        font-size: 14px;
+        line-height: 1.29;
+        color: black;
+        margin-bottom: 5px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+}
+
+.text-block {
+    background-color: $white;
+    border-radius: 4px;
+    box-sizing: border-box;
+    padding: 12px 12px 14px;
+    &__paragraph {
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        margin-bottom: 5px;
+    }
+    margin-bottom: 10px;
+}
+
+.btn-main {
+    background-color: $blue;
+    width: 176px;
+    height: 34px;
+    font-size: 14px;
+    line-height: 18px;
+    font-family: SF-Pro-Display-Regular;
+    padding: 8px 12px;
+    color: $white;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;
+    border: none;
+    border-radius: 4px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    &:hover {
+        background-color: darken($blue, 3);
+    }
+    margin-bottom: 5px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+    &--gray {
+        background-color: $dark-gray;
+        width: auto;
+        padding: 0 12px;
+        &:hover {
+            background-color: darken($dark-gray, 3);
+        }
+    }
+    &--light-gray {
+        background-color: $cold-gray;
+        width: auto;
+        padding: 0 12px;
+        &:hover {
+            background-color: darken($cold-gray, 3);
+        }
+    }
+}
+
+.btn-round {
+    background-color: $blue;
+    width: auto;
+    height: 40px;
+    font-size: 15px;
+    line-height: 18px;
+    font-family: SF-Pro-Display-Regular;
+    padding: 11px 15px;
+    color: $white;
+    text-align: center;
+    display: block;
+    cursor: pointer;
+    box-shadow: none;
+    appearance: none;
+    border: none;
+    border-radius: 40px;
+    transition-property: background-color;
+    transition-duration: 200ms;
+    &:hover {
+        background-color: darken($blue, 3);
+    }
+    &--outline {
+        background-color: transparent;
+        border: 1px solid $cold-gray;
+        color: $btn-gray;
+        &:hover {
+            border-color: darken($cold-gray, 10);
+            background-color: transparent;
+        }
+    }
+    &--outline-blue {
+        background-color: transparent;
+        border: 1px solid $blue;
+        color: $blue;
+        &:hover {
+            border-color: darken($blue, 10);
+            background-color: transparent;
+        }
+    }
+}
+
+
+.scroll::-webkit-scrollbar-track
+{
+    border-radius: 10px;
+    background-color: $bg;
+    margin-top: 10px;
+    margin-right: 3px;
+}
+
+.scroll::-webkit-scrollbar
+{
+    width: 4px;
+    background-color: $bg;
+    margin-right: 3px;
+    margin-top: 10px;
+}
+
+.scroll::-webkit-scrollbar-thumb
+{
+    border-radius: 10px;
+    background-color: $blue;
+    margin-right: 3px;
+}

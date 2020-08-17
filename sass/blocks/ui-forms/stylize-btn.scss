@@ -1,0 +1,58 @@
+@import "../../variables";
+
+.stylize-btn {
+    width: 100%;
+    background-color: $gray;
+    padding: 12px;
+    box-sizing: border-box;
+    &__elem {
+        box-sizing: border-box;
+        width: 100%;
+        position: relative;
+        margin-bottom: 8px;
+        min-height: 40px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__settings {
+        background-color: #005cc5;
+        padding: 52px 12px 14px;
+        border-radius: 4px;
+    }
+    &__btn {
+        background-color: $blue;
+        width: 100%;
+        box-sizing: border-box;
+        height: 40px;
+        font-size: 15px;
+        font-family: SF-Pro-Display-Regular;
+        padding: 11px 12px;
+        color: $white;
+        display: block;
+        cursor: pointer;
+        box-shadow: none;
+        appearance: none;
+        border: none;
+        text-align: left;
+        border-radius: 4px;
+        transition-property: background-color;
+        transition-duration: 200ms;
+        position: absolute;
+        top: 0;
+        &--active {
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+        }
+    }
+    &__actions {
+        position: absolute;
+        right: 12px;
+        display: flex;
+        margin-left: 12px;
+        justify-content: space-between;
+        align-items: center;
+        width: 45px;
+        top: 60%;
+        transform: translate(0, -60%);
+    }
+}

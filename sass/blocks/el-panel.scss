@@ -1,0 +1,254 @@
+@import "../variables";
+
+.el-panel {
+    background-color: $bg;
+    width: 324px;
+    position: relative;
+    z-index: 0;
+    min-height: 100vh;
+    height: 100vh;
+    box-sizing: border-box;
+    margin-right: 20px;
+    // position: fixed;
+    // top: 0;
+    // left: 76px;
+    &__subtitle {
+        font-size: 15px;
+        line-height: 18px;
+        font-family: SF-Pro-Display-Semibold;
+        margin: 0;
+        margin-bottom: 12px;
+        color: $black;
+    }
+    &__elems {
+        min-height: calc(100vh - 73px);
+        height: calc(100vh - 73px);
+        overflow: scroll;
+        overflow-x:hidden;
+        width: 100%;
+        position: relative;
+    }
+    &__main {
+        width: 324px;
+        padding: 12px 12px 0px;
+        margin-bottom: 30px;
+        box-sizing: border-box;
+
+    }
+    &__elem {
+        margin-bottom: 30px;
+        &--hr {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        &--hr .el-panel__subtitle{
+            margin: 0;
+        }
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__btns-main {
+        margin-bottom: 30px;
+    }
+    &__input {
+        input {
+            height: 40px;
+            width: 100%;
+            background-color: $input-color;
+            border: none;
+            border-radius: 4px;
+            padding: 0 12px;
+            box-sizing: border-box;
+            font-size: 15px;
+            font-family: SF-Pro-Display-Regular;
+            margin: 0;
+            color: $black;
+            outline: none;
+            &::placeholder {
+                font-size: 15px;
+                font-family: SF-Pro-Display-Regular;
+                margin: 0;
+                color: $black;
+                opacity: 0.5;
+            }
+        }
+    }
+    &__btns {
+        display: flex;
+        background-color: $gray;
+        width: 100%;
+        padding: 16px 12px 17px;
+        box-sizing: border-box;
+        position: absolute;
+        bottom: 0;
+    }
+    &__btn {
+        margin-right: 10px;
+    }
+}
+
+.btns-main {
+    background-color: $gray;
+    padding-bottom: 12px;
+    &__btn {
+        position: relative;
+        margin:0 auto;
+        background-color: $white;
+        width: 276px;
+        max-width: 100%;
+        height: 40px;
+        font-size: 15px;
+        line-height: 18px;
+        font-family: SF-Pro-Display-Regular;
+        padding: 8px 12px;
+        color: $blue;
+        text-align: center;
+        display: block;
+        cursor: pointer;
+        box-shadow: none;
+        appearance: none;
+        border: none;
+        border-radius: 4px;
+        transition-property: background-color;
+        transition-duration: 200ms;
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+        &:hover {
+            background-color: darken($white, 3);
+        }
+        &::before {
+            content: "";
+            width: 18px;
+            height: 18px;
+            border-radius: 18px;
+            background-color: $blue;
+            position: absolute;
+            top: 50%;
+            left: 12px;
+            transform: translate(0, -50%);
+        }
+    }
+}
+
+.btn-settings {
+    &__elem {
+        label {
+            font-family: SF-Pro-Display-Regular;
+            font-size: 14px;
+            color: black;
+            opacity: 0.7;
+        }
+        margin-bottom: 12px;
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+    &__title {
+        font-family: SF-Pro-Display-Regular;
+        font-size: 14px;
+        color: black;
+        opacity: 0.7;
+        margin-bottom: 6px;
+        display: inline-block;
+    }
+}
+
+.form-input {
+    width: 100%;
+    input {
+        margin-top: 6px;
+        width: 252px;
+        max-width: 100%;
+        height: 36px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        border: solid 1px $gray;
+        background-color: $white;
+        padding: 0 10px;
+        outline: none;
+        color: $black;
+        font-family: SF-Pro-Display-Regular;
+        font-size: 14px;
+        &::placeholder {
+            color: $black;
+            font-family: SF-Pro-Display-Regular;
+            font-size: 14px;
+            opacity: 0.5;
+        }
+        &:focus {
+            border-color: darken($gray, 5)
+        }
+    }
+    &:last-child {
+        margin-bottom: 25px;
+    }
+}
+
+.el-header {
+    width: 100%;
+    height: 92px;
+    border-bottom: 1px solid $border-color;
+}
+
+.btn-settings {
+    border-radius: 4px;
+    padding: 0 12px 0;
+    &__settings {
+        background-color: #e7e8eb;
+        padding: 12px 12px 16px;
+    }
+    margin-bottom: 8px;
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.btn-edit {
+    width: 276px;
+    max-width: 100%;
+    background-color: $blue;
+    height: 40px;
+    border-radius: 4px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    &__edit {
+        position: absolute;
+        top: 50%;
+        right: 12px;
+        transform: translate(0, -50%);
+        display: flex;
+        div {
+            background-color: white;
+            height: 5px;
+            width: 5px;
+            margin-left: 5px;
+        }
+    }
+    input {
+        background-color: transparent;
+        border: none;
+        outline: none;
+        color: $white;
+        font-family: SF-Pro-Display-Regular;
+        font-size: 15px;
+        padding: 0 90px 0 12px;
+        &::placeholder {
+            color: $white;
+            font-family: SF-Pro-Display-Regular;
+            font-size: 15px;
+            opacity: 0.5;
+        }
+    }
+    &--active {
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.12);
+    }
+}
+
+.active-btn {
+    padding: 12px 12px 0;
+    margin-bottom: 12px;
+    
+}
+

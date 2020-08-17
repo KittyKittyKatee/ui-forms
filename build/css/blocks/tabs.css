@@ -1,0 +1,90 @@
+.tabs {
+  width: 100%;
+  height: 40px; }
+  .tabs input {
+    display: none; }
+  .tabs__label {
+    height: 100%;
+    width: 100%;
+    background-color: #eeeff2;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    position: relative;
+    overflow: hidden;
+    border-radius: 4px;
+    font-size: 15px;
+    color: #26282d;
+    font-family: SF-Pro-Display-Regular; }
+  .tabs__active {
+    width: 150px;
+    height: 40px;
+    border-radius: 4px;
+    background-color: #006ae4;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    -webkit-transition: all 0.2s ease-in-out;
+    transition: all 0.2s ease-in-out; }
+  .tabs__right {
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    z-index: 10;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s; }
+  .tabs__left {
+    border-radius: 4px;
+    cursor: pointer;
+    width: 150px;
+    height: 40px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    -webkit-transition: all 0.3s;
+    transition: all 0.3s;
+    z-index: 10; }
+
+.active-tab {
+  color: #fff; }
+
+input:checked + .tabs__label .tabs__active {
+  -webkit-transform: translateX(100%);
+          transform: translateX(100%); }
+
+input:checked + .tabs__label .tabs__right {
+  color: #26282d; }
+
+input:checked + .tabs__label .tabs__left {
+  color: #fff; }

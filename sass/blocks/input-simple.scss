@@ -1,0 +1,38 @@
+@import "../variables";
+
+.input-simple {
+    display: flex;
+    flex-direction: column;
+    input {
+        margin-top: 10px;
+        width: 100%;
+        max-width: 100%;
+        height: 40px;
+        box-sizing: border-box;
+        border-radius: 3px;
+        border: solid 1px $gray;
+        background-color: $bg;
+        padding: 0 10px;
+        outline: none;
+        color: $black;
+        font-family: SF-Pro-Display-Regular;
+        font-size: 15px;
+        &::placeholder {
+            color: $text-gray;
+            font-family: SF-Pro-Display-Regular;
+            font-size: 15px;
+        }
+        &:focus {
+            border-color: darken($gray, 5)
+        }
+    }
+    label {
+        font-family: SF-Pro-Display-Regular;
+        font-size: 15px;
+        color: $label-color;
+    }
+    // margin-bottom: 15px;
+    // &:last-child {
+    //     margin-bottom: 25px;
+    // }
+}

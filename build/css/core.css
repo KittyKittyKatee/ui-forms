@@ -1,0 +1,186 @@
+@charset "UTF-8";
+/**
+ * Основные стили
+ **/
+html {
+  font-size: 18px; }
+
+body {
+  font-family: 'SF-Pro-Display-Regular', 'Helvetica', 'Arial', sans-serif;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  background-color: #424750; }
+
+.title-1 {
+  font-family: SF-Pro-Display-Semibold;
+  font-size: 32px;
+  color: #26282d;
+  margin-bottom: 30px; }
+
+.title-2 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 24px;
+  line-height: normal;
+  color: #26282d;
+  margin: 0; }
+
+.title-3 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 21px;
+  line-height: normal;
+  color: #26282d;
+  margin: 0;
+  margin-bottom: 10px; }
+
+.title-4 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 15px;
+  line-height: normal;
+  color: #26282d;
+  margin: 0;
+  margin-bottom: 20px; }
+
+.title-6 {
+  font-family: SF-Pro-Display-Bold;
+  font-size: 14px;
+  line-height: 18px;
+  color: #26282d;
+  margin: 0; }
+
+.text-15 {
+  font-family: SF-Pro-Display-Regular;
+  font-size: 15px;
+  color: #26282d;
+  margin: 0; }
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  max-width: 1784px;
+  margin: 0 auto 0 76px;
+  overflow: hidden; }
+
+body {
+  height: 100vh; }
+
+.small-text p {
+  font-family: SF-Pro-Display-Regular;
+  font-size: 14px;
+  line-height: 1.29;
+  color: black;
+  margin-bottom: 5px; }
+  .small-text p:last-child {
+    margin-bottom: 0; }
+
+.text-block {
+  background-color: #fff;
+  border-radius: 4px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 12px 12px 14px;
+  margin-bottom: 10px; }
+  .text-block__paragraph {
+    margin-bottom: 12px; }
+    .text-block__paragraph:last-child {
+      margin-bottom: 0; }
+  .text-block__title {
+    margin-bottom: 5px; }
+
+.btn-main {
+  background-color: #006ae4;
+  width: 176px;
+  height: 34px;
+  font-size: 14px;
+  line-height: 18px;
+  font-family: SF-Pro-Display-Regular;
+  padding: 8px 12px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 4px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms;
+  margin-bottom: 5px; }
+  .btn-main:hover {
+    background-color: #0063d5; }
+  .btn-main:last-child {
+    margin-bottom: 0; }
+  .btn-main--gray {
+    background-color: #727887;
+    width: auto;
+    padding: 0 12px; }
+    .btn-main--gray:hover {
+      background-color: #6b717f; }
+  .btn-main--light-gray {
+    background-color: #a0a8bb;
+    width: auto;
+    padding: 0 12px; }
+    .btn-main--light-gray:hover {
+      background-color: #97a0b5; }
+
+.btn-round {
+  background-color: #006ae4;
+  width: auto;
+  height: 40px;
+  font-size: 15px;
+  line-height: 18px;
+  font-family: SF-Pro-Display-Regular;
+  padding: 11px 15px;
+  color: #fff;
+  text-align: center;
+  display: block;
+  cursor: pointer;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  border: none;
+  border-radius: 40px;
+  -webkit-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 200ms;
+          transition-duration: 200ms; }
+  .btn-round:hover {
+    background-color: #0063d5; }
+  .btn-round--outline {
+    background-color: transparent;
+    border: 1px solid #a0a8bb;
+    color: #484c56; }
+    .btn-round--outline:hover {
+      border-color: #828da6;
+      background-color: transparent; }
+  .btn-round--outline-blue {
+    background-color: transparent;
+    border: 1px solid #006ae4;
+    color: #006ae4; }
+    .btn-round--outline-blue:hover {
+      border-color: #0052b1;
+      background-color: transparent; }
+
+.scroll::-webkit-scrollbar-track {
+  border-radius: 10px;
+  background-color: #f6f8fc;
+  margin-top: 10px;
+  margin-right: 3px; }
+
+.scroll::-webkit-scrollbar {
+  width: 4px;
+  background-color: #f6f8fc;
+  margin-right: 3px;
+  margin-top: 10px; }
+
+.scroll::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #006ae4;
+  margin-right: 3px; }

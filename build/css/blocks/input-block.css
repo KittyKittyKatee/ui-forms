@@ -1,0 +1,54 @@
+.input-block__title {
+  margin-bottom: 12px;
+  font-size: 15px;
+  font-family: SF-Pro-Display-Semibold;
+  line-height: 21px;
+  color: #26282d; }
+
+.input-block__input input {
+  height: 40px;
+  width: 100%;
+  background-color: #e7e8eb;
+  border: none;
+  border-radius: 4px;
+  padding: 0 12px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-size: 15px;
+  font-family: SF-Pro-Display-Regular;
+  margin: 0;
+  color: #26282d;
+  outline: none; }
+  .input-block__input input::-webkit-input-placeholder {
+    font-size: 15px;
+    font-family: SF-Pro-Display-Regular;
+    margin: 0;
+    color: #26282d;
+    opacity: 0.5; }
+  .input-block__input input::-moz-placeholder {
+    font-size: 15px;
+    font-family: SF-Pro-Display-Regular;
+    margin: 0;
+    color: #26282d;
+    opacity: 0.5; }
+  .input-block__input input:-ms-input-placeholder {
+    font-size: 15px;
+    font-family: SF-Pro-Display-Regular;
+    margin: 0;
+    color: #26282d;
+    opacity: 0.5; }
+  .input-block__input input::-ms-input-placeholder {
+    font-size: 15px;
+    font-family: SF-Pro-Display-Regular;
+    margin: 0;
+    color: #26282d;
+    opacity: 0.5; }
+  .input-block__input input::placeholder {
+    font-size: 15px;
+    font-family: SF-Pro-Display-Regular;
+    margin: 0;
+    color: #26282d;
+    opacity: 0.5; }
+
+.input-block__input--white input {
+  background-color: #fff; }

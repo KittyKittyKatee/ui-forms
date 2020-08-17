@@ -1,0 +1,42 @@
+@import "../variables";
+
+.el-header {
+    width: 100%;
+    position: relative;
+    padding: 20px 12px;
+    box-sizing: border-box;
+    &__tip-title {
+        color: $blue;
+        text-decoration: none;
+        cursor: pointer;
+    }
+    &__title {
+        font-family: SF-Pro-Display-Bold;
+        font-size: 24px;
+        line-height: normal;
+        color: $black;
+        margin: 0;
+    }
+}
+
+.close-btn {
+    cursor: pointer;
+    width: 20px;
+    height: 20px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #727887;
+    position: absolute;
+    top: 25px;
+    right: 12px;
+    appearance: none;
+    outline: none;
+    box-shadow: none;
+    border: none;
+    transition: all 0.2s;
+    &:hover {
+        background-color: darken(#727887, 5);
+    }
+}
